@@ -38,11 +38,18 @@ This repository contains the necessary files to use and showcase the prefabs:
 
 This is an open-source project. If you have suggestions or would like to enhance the existing prefabs, feel free to fork the repository and submit a Pull Request!
 
-## DEMO
+## D E M O
 
 1.Youtube Video: https://youtu.be/melVOhlAhA4
 
-<img width="1836" height="896" alt="Screenshot 2025-10-30 113219" src="https://github.com/user-attachments/assets/9910669e-a881-49db-b50b-822c41f6ce22" />
-<img width="1880" height="904" alt="Screenshot 2025-10-30 113234" src="https://github.com/user-attachments/assets/1284483a-9225-4346-a023-cee4435e726e" />
-<img width="1869" height="904" alt="Screenshot 2025-10-30 113244" src="https://github.com/user-attachments/assets/96f483ca-dac0-479d-ae1d-2369ba4092db" />
-<img width="1888" height="905" alt="Screenshot 2025-10-30 113255" src="https://github.com/user-attachments/assets/2bd7f4df-c951-475d-a113-b840127bad93" />
+**1:**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/9910669e-a881-49db-b50b-822c41f6ce22" width="48%" alt="Captura Ancha 1: Dashboard de Repartidor"/>
+  <img src="https://github.com/user-attachments/assets/1284483a-9225-4346-a023-cee4435e726e" width="48%" alt="Captura Ancha 2: Vista de Detalle de Orden"/>
+</p>
+
+**2:**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/96f483ca-dac0-479d-ae1d-2369ba4092db" width="48%" alt="Captura Ancha 3: Interfaz de Mapeo Avanzado"/>
+  <img src="https://github.com/user-attachments/assets/2bd7f4df-c951-475d-a113-b840127bad93" width="48%" alt="Captura Ancha 4: Panel de Ajustes y Perfil"/>
+</p>
