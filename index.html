@@ -7,6 +7,33 @@
     <title>UI/UX Components Library - 17 High-Fidelity Prefabs</title>
 
     <style>
+        :root {
+            --primary-dark-purple: #340083;
+            --primary-medium-purple: #482183;
+            --primary-light-purple: #583890;
+            --primary-lavender: #6D4D9C;
+            --primary-pale-lavender: #817AB5;
+            --primary-lightest-lavender: #EFE7F7;
+
+            --secondary-dark-teal: #000081;
+            --secondary-medium-teal: #008DC1;
+            --secondary-light-teal: #33CDD1;
+            --secondary-pale-teal: #6EBD80;
+            --secondary-lightest-teal: #99E6E0;
+            --secondary-aquamarine: #B3E0E8;
+
+            --shade-darkest: #1D122E;
+            --shade-dark: #231D2E;
+            --shade-medium-dark: #383340;
+            --shade-medium: #777380;
+            --shade-light: #C5C2CC;
+            --shade-lightest: #E8E4EB;
+
+            --text-body: var(--shade-medium-dark);
+            --text-header: var(--primary-dark-purple);
+            --text-light: white;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -14,11 +41,11 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-                Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: #fff;
+            font-family: 'Karla', sans-serif;
+            background: var(--shade-lightest); 
+            color: var(--text-body);
             overflow-x: hidden;
+            line-height: 1.6;
         }
 
         .container {
@@ -36,8 +63,8 @@
             width: 80px;
             height: 80px;
             margin: 0 auto 20px;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
+            background: var(--primary-dark-purple);
+            color: var(--text-light);
             border-radius: 20px;
             display: flex;
             align-items: center;
@@ -47,7 +74,6 @@
         }
 
         @keyframes float {
-
             0%,
             100% {
                 transform: translateY(0px);
@@ -59,19 +85,18 @@
         }
 
         h1 {
+            font-family: 'Rubik', sans-serif;
             font-size: 3.5rem;
-            font-weight: 800;
+            font-weight: 700; 
             margin-bottom: 20px;
-            background: linear-gradient(to right, #fff, #e0e7ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--text-header);
         }
 
         .subtitle {
+            font-family: 'Karla', sans-serif;
             font-size: 1.3rem;
-            opacity: 0.95;
-            font-weight: 300;
+            color: var(--shade-medium); 
+            font-weight: 400;
             margin-bottom: 40px;
         }
 
@@ -91,29 +116,33 @@
             transition: all 0.3s ease;
             text-decoration: none;
             display: inline-block;
-            font-weight: 600;
+            font-family: 'Rubik', sans-serif; 
+            font-weight: 500;
+            border: 2px solid transparent; 
         }
 
         .btn-primary {
-            background: #fff;
-            color: #667eea;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+           
+            background: var(--primary-dark-purple);
+            color: var(--text-light);
+            box-shadow: 0 4px 12px rgba(52, 0, 131, 0.2);
         }
 
         .btn-primary:hover {
+            background: var(--primary-medium-purple);
             transform: translateY(-3px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(52, 0, 131, 0.3);
         }
 
         .btn-secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: #fff;
-            backdrop-filter: blur(10px);
-            border: 2px solid rgba(255, 255, 255, 0.3);
+            
+            background: transparent;
+            color: var(--primary-dark-purple);
+            border: 2px solid var(--primary-dark-purple);
         }
 
         .btn-secondary:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: var(--primary-lightest-lavender); 
             transform: translateY(-3px);
         }
 
@@ -128,34 +157,42 @@
             margin-top: 60px;
         }
 
-        .feature-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
+        .feature-card,
+        .preview-card,
+        .preview-container,
+        .stat-card {
+            background: #fff; 
+            backdrop-filter: none; 
             border-radius: 20px;
             padding: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid var(--shade-light); 
             transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); 
         }
 
-        .feature-card:hover {
+        .feature-card:hover,
+        .preview-card:hover {
             transform: translateY(-10px);
-            background: rgba(255, 255, 255, 0.15);
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
         }
 
         .feature-icon {
             font-size: 3rem;
             margin-bottom: 20px;
+            color: var(--primary-dark-purple); 
         }
 
         .feature-card h3 {
+            font-family: 'Rubik', sans-serif;
             font-size: 1.5rem;
             margin-bottom: 15px;
+            color: var(--text-header);
         }
 
         .feature-card p {
-            opacity: 0.9;
+            color: var(--text-body);
             line-height: 1.6;
+            opacity: 1; 
         }
 
         .preview-section {
@@ -164,16 +201,10 @@
         }
 
         .preview-section h2 {
+            font-family: 'Rubik', sans-serif;
             font-size: 2.5rem;
             margin-bottom: 50px;
-        }
-
-        .preview-container {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: var(--text-header);
         }
 
         .stats {
@@ -185,27 +216,27 @@
 
         .stat-card {
             text-align: center;
+            padding: 20px;
         }
 
         .stat-number {
+            font-family: 'Rubik', sans-serif;
             font-size: 3rem;
-            font-weight: 800;
+            font-weight: 700;
             margin-bottom: 10px;
-            background: linear-gradient(to right, #fff, #e0e7ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            color: var(--primary-dark-purple); 
         }
 
         .stat-label {
+            font-family: 'Karla', sans-serif;
             font-size: 1.1rem;
-            opacity: 0.9;
+            color: var(--shade-medium);
         }
 
         footer {
             padding: 60px 0 40px;
             text-align: center;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid var(--shade-light); 
             margin-top: 80px;
         }
 
@@ -218,14 +249,14 @@
         }
 
         .footer-links a {
-            color: #fff;
+            color: var(--primary-medium-purple); 
             text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.3s;
+            font-weight: 700;
+            transition: color 0.3s;
         }
 
         .footer-links a:hover {
-            opacity: 1;
+            color: var(--primary-dark-purple);
         }
 
         .github-link {
@@ -233,14 +264,21 @@
             align-items: center;
             gap: 10px;
             margin-top: 20px;
-            color: #fff;
+            color: var(--text-body); 
             text-decoration: none;
-            opacity: 0.9;
-            transition: opacity 0.3s;
+            transition: color 0.3s;
         }
 
         .github-link:hover {
-            opacity: 1;
+            color: var(--primary-dark-purple);
+        }
+
+        .github-link svg {
+            fill: currentColor;
+        }
+
+        footer p {
+            color: var(--shade-medium);
         }
 
         @media (max-width: 768px) {
@@ -270,55 +308,38 @@
             margin-top: 60px;
         }
 
-        .preview-card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            text-align: center;
-        }
-
         .preview-card h3 {
+            font-family: 'Rubik', sans-serif;
+            color: var(--text-header);
             margin-bottom: 15px;
         }
 
         .preview-image {
-            background: #fff;
+            background: #fff; 
             border-radius: 10px;
             padding: 10px;
         }
-
-        .preview-image img {
-            max-height: 200px;
-            width: auto;
+        
+        .preview-card {
+            padding: 20px; 
+            overflow: hidden;
         }
 
-        .preview-card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    padding: 40px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
-    
-    overflow: hidden;
-}
+        .preview-image {
+            height: 250px; 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            padding: 10px;
+            background: var(--shade-lightest); 
+            border-radius: 10px;
+        }
 
-.preview-image {
-    height: 250px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    padding: 10px;
-}
-
-.preview-image img {
-    max-width: 100%; 
-    max-height: 100%;
-    
-    object-fit: contain; 
-}
+        .preview-image img {
+            max-width: 100%; 
+            max-height: 100%;
+            object-fit: contain; 
+        }
 
     </style>
 </head>
