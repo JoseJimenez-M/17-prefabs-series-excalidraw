@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI/UX Components Library - 17 High-Fidelity Prefabs</title>
+    <title>Athena Board - Prefab Library</title>
+    <link rel="icon" type="image/png" href="https://devfortress.com/wp-content/uploads/2025/10/Logo-square-1000px-transparent-background.png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Rubik:wght@500;700&display=swap" rel="stylesheet">
+
 
     <style>
         :root {
@@ -32,6 +36,9 @@
             --text-body: var(--shade-medium-dark);
             --text-header: var(--primary-dark-purple);
             --text-light: white;
+            
+            
+            --athena-color: #340083;
         }
 
         * {
@@ -58,19 +65,29 @@
             padding: 60px 0 40px;
             text-align: center;
         }
-
-        .logo {
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 20px;
-            background: var(--primary-dark-purple);
-            color: var(--text-light);
-            border-radius: 20px;
+        
+        .header-title-group {
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 40px;
-            animation: float 3s ease-in-out infinite;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .header-logo {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .header-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+
+        .logo {
+            display: none; 
         }
 
         @keyframes float {
@@ -88,16 +105,18 @@
             font-family: 'Rubik', sans-serif;
             font-size: 3.5rem;
             font-weight: 700; 
-            margin-bottom: 20px;
-            color: var(--text-header);
+            margin-bottom: 0; 
+            color: var(--athena-color); 
+            line-height: 1; 
         }
 
         .subtitle {
             font-family: 'Karla', sans-serif;
             font-size: 1.3rem;
-            color: var(--shade-medium); 
+            color: var(--athena-color); 
             font-weight: 400;
             margin-bottom: 40px;
+            text-align: center;
         }
 
         .cta-buttons {
@@ -285,6 +304,11 @@
             h1 {
                 font-size: 2.5rem;
             }
+            
+            .header-title-group {
+                flex-direction: column;
+                gap: 5px;
+            }
 
             .subtitle {
                 font-size: 1.1rem;
@@ -347,24 +371,26 @@
 <body>
     <div class="container">
         <header>
-            <div class="logo">✨</div>
-            <h1>High-Fidelity UI/UX Components Library</h1>
+            <div class="header-title-group">
+                <div class="header-logo">
+                    <img src="https://devfortress.com/wp-content/uploads/2025/10/Logo-square-1000px-transparent-background.png" alt="DevFortress Athena Logo" />
+                </div>
+                <h1>Athena Board</h1>
+            </div>
+            
             <p class="subtitle">
-                A collection of **17 high-fidelity prefabs** for web application
-                diagrams and user flows.
+                Prefab library of 17 ready-to-use design components for web application diagrams.
             </p>
 
             <div class="cta-buttons">
                 <a href="https://excalidraw.com/?addLibrary=https%3A%2F%2Fraw.githubusercontent.com%2Fexcalidraw%2Fexcalidraw-libraries%2Fjosejimenez-m-high-fidelity-ui-ux-components-1761767542432%2Flibraries%2Fjosejimenez-m%2Fhigh-fidelity-ui-ux-components.excalidrawlib%3Fraw%3Dtrue"
                     class="btn btn-primary">Add to Excalidraw</a>
-                <a href="https://github.com/josejimenez-m/17-prefabs-series-excalidraw" class="btn btn-secondary">View
+                <a href="https://github.com/excalidraw/excalidraw-libraries" class="btn btn-secondary">View
                     Repository on GitHub</a>
             </div>
         </header>
 
-        <!-- CARDS EXAMPLES--->
-
-    <section class="preview-section">
+        <section class="preview-section">
     <h2>Library Preview</h2>
     <div class="preview-grid">
         <div class="preview-card">
