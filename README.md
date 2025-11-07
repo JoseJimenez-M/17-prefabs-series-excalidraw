@@ -1,18 +1,18 @@
 # ✨ High-Fidelity UI/UX Components Library (17 Prefabs)
 
-Welcome to the **High-Fidelity UI/UX Components** library, a comprehensive collection of **17 pre-designed components** for Excalidraw, the virtual hand-drawn whiteboard. This set is ideal for quickly prototyping web application interfaces, complex user flows, and system architecture diagrams.
+Welcome to the **High-Fidelity UI/UX Components** library, a comprehensive collection of **17 pre-designed components** for Whiteboard, the virtual hand-drawn whiteboard. This set is ideal for quickly prototyping web application interfaces, complex user flows, and system architecture diagrams.
 
 ## 📦 What's Included
 
 This repository contains the necessary files to use and showcase the prefabs:
 
-1.  **`library.excalidrawlib`**
+1.  **`library`**
     * This file contains all **17 high-fidelity prefabs**.
     * The elements are designed as a consistent *series*, sharing a common aesthetic and subject matter.
 
 2.  **`index.html`**
     * A custom landing page to showcase the library.
-    * It provides a simple interface to preview the 17 prefabs and directly add them to an Excalidraw board, simplifying the integration process.
+    * It provides a simple interface to preview the 17 prefabs and directly add them to an Whiteboard, simplifying the integration process.
 
 ## ✨ Why This Library?
 
@@ -24,15 +24,15 @@ This repository contains the necessary files to use and showcase the prefabs:
 
 ### 1. Directly in Excalidraw
 
-1.  Open the Excalidraw application.
+1.  Open the Whiteboard application.
 2.  Click the "Library" button (or press `9`).
-3.  Click **"Load"** and select the **`library.excalidrawlib`** file from this repository.
+3.  Click **"Load"** and select the **`library`** file from this repository.
 4.  The 17 prefabs will be available in your Library panel for immediate use!
 
 ### 2. Via the Landing Page
 
 1.  Open the `index.html` file in your web browser (after activating GitHub Pages).
-2.  Click the **"Add 17 Prefabs a Excalidraw"** button on the page to instantly load the entire collection into your workspace.
+2.  Click the **"Add 17 Prefabs Whiteboard"** button on the page to instantly load the entire collection into your workspace.
 
 ## 🤝 Contribution
 
